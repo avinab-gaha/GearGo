@@ -1,0 +1,11 @@
+@media (min-width: 1400px) {
+
+    .header-wrapper .container,
+    .header-wrapper .container-lg,
+    .header-wrapper .container-md,
+    .header-wrapper .container-sm,
+    .header-wrapper .container-xl,
+    .header-wrapper .container-xxl {
+        max-width: 1278.5px;
+    }
+}
