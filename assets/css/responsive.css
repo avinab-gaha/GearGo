@@ -8,6 +8,15 @@
 @media (max-width: 900px) {
     .main-wrapper {
         flex-direction: row;
+        text-align: center;
+    }
+
+    .header-wrapper .h1,
+    h1 {
+        font-family: 'Author-Semibold', sans-serif;
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 3rem;
     }
 
     .gps-box-wrap {
