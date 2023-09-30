@@ -1,11 +1,22 @@
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
 
-    .header-wrapper .container,
-    .header-wrapper .container-lg,
-    .header-wrapper .container-md,
-    .header-wrapper .container-sm,
-    .header-wrapper .container-xl,
-    .header-wrapper .container-xxl {
+    .container-mod {
         max-width: 1278.5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-wrapper {
+        flex-direction: row;
+    }
+
+    .gps-box-wrap {
+        position: relative;
+        display: block;
+        top: 0;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -o-transform: translateY(0%);
     }
 }

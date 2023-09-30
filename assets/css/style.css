@@ -15,15 +15,13 @@ body {
     font-family: "Author-Medium", sans-serif;
     font-size: 1.5rem;
     color: #37474F;
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
 }
 
-main {
-    background-image: url(../images/bg-img.png);
-    width: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.home-wrapper {
+    position: relative;
+    max-width: 100%;
 }
 
 .header-wrapper .h1,
@@ -54,12 +52,11 @@ h1 {
     text-transform: capitalize;
 }
 
-.header-wrapper .h1,
-h3 {
+.header-wrapper h3 {
     font-size: 2rem;
 }
 
-span {
+.primarycolor {
     color: #E15352;
 }
 
@@ -68,7 +65,7 @@ span {
 }
 
 .container-mod {
-    max-width: 1281.5px;
+    max-width: 128.15rem;
     margin: 0 auto;
 }
 
@@ -85,6 +82,11 @@ span {
     color: #37474F;
 }
 
+.navbar-nav .nav-link span {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
 a,
 a:hover {
     color: #37474F;
@@ -92,40 +94,148 @@ a:hover {
 }
 
 .btn-mod {
-    border-radius: 14px;
-    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 2.6rem;
     font-size: 1.5rem;
     font-weight: normal;
+    padding: 0.2rem 2.9rem;
+    background-color: #E15352;
+    gap: 1rem;
+}
+
+.main-wrapper {
+    background-color: #FFFFFF;
+    background-image: url(../images/bg-img.png);
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .main-heading-btn {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
-.main-heading-text {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: end;
+.main-heading-btn a:first-child {
+    margin-right: 1rem;
+}
+
+.main-heading-text img,
+h3 {
+    display: inline-block;
+    line-height: normal;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.main-heading-text img {
+    margin-left: 1rem;
+}
+
+.main-heading-text h3 {
+    margin-left: 0.5rem;
 }
 
 .gps-box-wrap {
     position: absolute;
     right: 0;
-    top: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
-.gps-box {
+.gps-box {}
+
+.main-vector {
     position: absolute;
     right: 0;
-    box-shadow: 0 0.4rem 3.4rem 0 rgba(0, 0, 0, 0.25);
-    border-radius: 1.5rem;
+    bottom: -10%;
+    z-index: -1;
 }
 
-.gps-box::after {
-    content: url('../images/gps-img1-1x.png');
-    box-shadow: 0 0.4rem 3.4rem 0 rgba(0, 0, 0, 0.25);
-    border-radius: 1.5rem;
+.chat-wrappers {
+    position: fixed;
+    position: -webkit-sticky;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.why-choose-section {
+    background-color: #181823;
+    background-image: url(/assets/images/why-choose-bg.png);
     width: 100%;
-    height: 412px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.sub-heading {
+    padding: 5rem;
+    color: #fff;
+}
+
+.sub-heading h2 {
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 1%;
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Author-Semibold', sans-serif;
+}
+
+.line {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: #FFFFFF;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+.description {
+    max-width: 66.023rem;
+    margin: 2rem auto;
+    position: relative;
+    padding: 2rem 0;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.description p {
+    margin: 0;
+}
+
+.description::before {
+    content: "";
+    height: 0.1rem;
+    width: 10rem;
+    display: inline-block;
+    background-color: #e15352;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.description::after {
+    content: "";
+    height: 0.1rem;
+    width: 10rem;
+    display: inline-block;
+    background-color: #e15352;
+    right: 0;
+    bottom: 0;
+    position: absolute;
 }
