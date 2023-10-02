@@ -23,7 +23,7 @@
     <div class="home-wrapper">
         <header class="navbar-header">
             <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
-                <div class="container container-mod">
+                <div class="container-fluid container-mod">
                     <a class="navbar-logo" href="#">
                         <svg width="105" height="30" viewBox="0 0 105 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -117,16 +117,20 @@
         <main class="main-wrapper">
             <div class="container container-mod">
                 <div class="row">
-                    <div class="col-lg-7 col-md-6 col-sm-12 col-xl-12">
+                    <div class="col-md-6 col-sm-6">
                         <!-- Content of the first column -->
-                        <div class="main-heading-wrapper col-sm-12 col-xl-12">
-                            <h1 class="main-heading-title">Keep All Controls <span class="block primarycolor">Of Your
+                        <div class="main-heading-wrapper">
+                            <h1 class="main-heading-title">Keep All Controls <span class="block primary-color">Of Your
                                     Vehicles</span>
                                 In
                                 your Hand!</h1>
-                            <div class="main-heading-btn">
-                                <a href="#"><img alt="google-play" src="assets/images/google-play.png"></a>
-                                <a href="#"><img alt="apple-store" src="assets/images/app-store.png"></a>
+                            <div class="main-heading-btn d-lg-flex">
+                                <a href="#">
+                                    <img alt="google-play" src="assets/images/google-play.png">
+                                </a>
+                                <a href="#">
+                                    <img alt="apple-store" src="assets/images/app-store.png">
+                                </a>
                             </div>
                             <div class="main-heading-text">
                                 <img alt="banner-logo" src="assets/images/logo-banner.png">
@@ -135,11 +139,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="gps-box-wrap">
-                    <img alt="gps-img" src="assets/images/gps-img2.png">
+                <div class="gps-box-wrap col-md-6 col-sm-6">
+                    <img class="responsive" alt="gps-img" src="assets/images/gps-img2.png">
                 </div>
             </div>
-            <div class="main-vector">
+            <div class="main-vector col-sm-3">
                 <svg width="343" height="741" viewBox="0 0 343 741" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M593.484 497.375C527.902 597.552 422.626 671.821 277.655 720.183C132.685 768.544 46.3926 718.456 18.7791 569.917C-8.83434 421.379 -0.205136 286.658 44.6667 165.755C89.5386 44.8512 177.556 -8.69175 308.72 5.12577C439.884 18.9433 536.531 79.395 598.662 186.481C660.792 293.567 659.066 397.198 593.484 497.375Z"
@@ -181,56 +185,124 @@
         </div><!--chat-wrappers-->
     </div><!--home-wrapper-->
     <section class="why-choose-section">
-        <div class="container container-mod">
-            <div class="sub-heading">
-                <h2 class="primarycolor"><span class="line"></span>why choose GearGo GPS?<span class="line"></span></h2>
-                <div class="description">
-                    <p>
-                        As a leading GPS tracking company in Nepal, Trackon GPS holds the strongest position amongst
-                        similar
-                        companies. Since our launch in 2021, we have always focused on providing excellent Customer
-                        Service
-                        and upgrading various Products Features.
-                    </p>
+        <div class="container container-mod1">
+            <div class="row">
+                <div class="sub-heading">
+                    <h2 class="primary-color">why choose GearGo GPS?</h2>
+                    <div class="description">
+                        <p style="color:#fff">
+                            As a leading GPS tracking company in Nepal, Trackon GPS holds the strongest position amongst
+                            similar
+                            companies. Since our launch in 2021, we have always focused on providing excellent Customer
+                            Service
+                            and upgrading various Products Features.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-choose-box">
+                    <ul class="why-choose-list d-lg-flex justify-content-center flex-wrap">
+                        <li class="why-choose-list-item p-2 col-sm-12">
+                            <img alt="mobile" src="assets/images/mobile.png">
+                            <p class="primary-color">500+</p>
+                            <span class="quaternary-color">App Downloads</span>
+                        </li>
+                        <li class="why-choose-list-item p-2 col-sm-12">
+                            <img alt="building" src="assets/images/Building.png">
+                            <p class="primary-color">100+</p>
+                            <span class="quaternary-color">Small Businesses</span>
+                        </li>
+                        <li class="why-choose-list-item p-2 col-sm-12">
+                            <img alt="b2b" src="assets/images/B2B.png">
+                            <p class="primary-color">20+</p>
+                            <span class="quaternary-color">B2B Business</span>
+                        </li>
+                        <li class="why-choose-list-item col-sm-12">
+                            <img alt="National wide dealers" src="assets/images/National Wide Dealers.png">
+                            <p class="primary-color">10+</p>
+                            <span class="quaternary-color">National Wide Dealers</span>
+                        </li>
+                        <li class="why-choose-list-item col-sm-12">
+                            <img alt="Devices Online" src="assets/images/Devices Online.png">
+                            <p class="primary-color">1000+</p>
+                            <span class="quaternary-color">Devices Online</span>
+                        </li>
+                        <li class="why-choose-list-item col-sm-12">
+                            <img alt="daily active users" src="assets/images/Daily Active Users.png">
+                            <p class="primary-color">500+</p>
+                            <span class="quaternary-color">Daily Active Users</span>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+    </section><!--why-choose-section-->
+
+    <section class="our-features">
+        <div class="container container-mod2">
+            <div class="row g-4">
+                <div class="sub-heading ">
+                    <h2 class="primary-color">Our Features</h2>
+                    <div class="description">
+                        <p>
+                            With Trackon GPS app, you can put your mind at ease knowing that no matter where you or your
+                            vehicle is, you will always be able to find it. You can also easily manage our powerful
+                            tracking functions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="our-features-box">
+                        <div class="our-features-img"><img alt="real time" src="assets/images/features-img-6.png"></div>
+                        <p class="primary-color">Real Time Tracking</p>
+                        <span>Live track your vehicle on mobile and be always aware of its location.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="our-features-box">
+                        <div class="our-features-img"><img alt="daily history" src="assets/images/features-img-1.png">
+                        </div>
+                        <p class="primary-color">Daily History</p>
+                        <span>Watch full-day travel history and key driving points in 10 secs.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="our-features-box">
+                        <div class="our-features-img"><img alt="remote engine" src="assets/images/features-img-2.png">
+                        </div>
+                        <p class="primary-color">Remote Engine Access</p>
+                        <span>
+                            Lock your engine from anywhere with the help of your mobile.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="our-features-box">
+                        <div class="our-features-img"><img alt="set geo-fences" src="assets/images/features-img-3.png">
+                        </div>
+                        <p class="primary-color">Set Geo-Fences</p>
+                        <span>Define safe areas and get notified when a vehicle enters/exits.</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="our-features-box">
+                        <div class="our-features-img"><img alt="real time" src="assets/images/features-img-4.png"></div>
+                        <p class="primary-color">Real Time Tracking</p>
+                        <span>Live track your vehicle on mobile and be always aware of its location.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="our-features-box">
+                        <div class="our-features-img"><img alt="time tracking" src="assets/images/features-img-5.png">
+                        </div>
+                        <p class="primary-color">Real Time Tracking</p>
+                        <span>Live track your vehicle on mobile and be always aware of its location.</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="why-choose-box">
-                <ul class="why-choose-list">
-                    <li class="why-choose-list-item">
-                        <img>
-                        <p>500+</p>
-                        <span>App Downloads</span>
-                    </li>
-                    <li class="why-choose-list-item">
-                        <img>
-                        <p>100+</p>
-                        <span>Small Businesses</span>
-                    </li>
-                    <li class="why-choose-list-item">
-                        <img>
-                        <p>20+</p>
-                        <span>B2B Business</span>
-                    </li>
-                    <li class="why-choose-list-item">
-                        <img>
-                        <p>10+</p>
-                        <span>National Wide Dealers</span>
-                    </li>
-                    <li class="why-choose-list-item">
-                        <img>
-                        <p>1000+</p>
-                        <span>Devices Online</span>
-                    </li>
-                    <li class="why-choose-list-item">
-                        <img>
-                        <p>500+</p>
-                        <span>Daily Active Users</span>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </section><!--why-choose-section-->
+    </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
