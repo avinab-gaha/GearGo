@@ -2,21 +2,30 @@ html {
     font-size: 62.5%;
 }
 
-:root {
-    --bs-primary: #B34040;
-    --bs-secondary: #B34040;
-    --bs-tertinary: #181823;
-}
-
 /* fontsize and font-family*/
 
 
 body {
     font-family: "Author-Medium", sans-serif;
     font-size: 1.5rem;
-    color: #37474F;
     height: 90vh;
     width: 100%;
+}
+
+.primary-color {
+    color: #E15352;
+}
+
+.secondary-color {
+    color: #37474F;
+}
+
+.tertiary-color {
+    color: #FFFFFF;
+}
+
+.quaternary-color {
+    color: #FB8C89;
 }
 
 .home-wrapper {
@@ -40,7 +49,6 @@ h6 {
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1;
-    color: #181823;
 }
 
 .header-wrapper .h1,
@@ -56,21 +64,19 @@ h1 {
     font-size: 2rem;
 }
 
-.primarycolor {
-    color: #E15352;
-}
 
 .block {
     display: block;
 }
 
 .container-mod {
-    max-width: 128.15rem;
+    max-width: 108.85rem;
     margin: 0 auto;
 }
 
 .navbar {
-    padding: 1.3rem 0;
+    padding-top: 1.3rem;
+    padding-bottom: 0;
 }
 
 .navbar-logo {
@@ -124,6 +130,7 @@ a:hover {
 }
 
 .main-heading-btn a:first-child {
+
     margin-right: 1rem;
 }
 
@@ -151,15 +158,28 @@ h3 {
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
 }
 
-.gps-box {}
+.gps-box-wrap img {
+    width: 100%;
+}
 
 .main-vector {
-    position: absolute;
+    max-width: 100%;
+    width: 343px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+}
+
+.main-vector svg {
     right: 0;
-    bottom: -10%;
-    z-index: -1;
+    bottom: -40rem;
+    z-index: 1;
+    position: absolute;
 }
 
 .chat-wrappers {
@@ -172,50 +192,84 @@ h3 {
 }
 
 .why-choose-section {
-    background-color: #181823;
-    background-image: url(/assets/images/why-choose-bg.png);
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 5rem 0;
+    position: relative;
+    background-image: url(../images/why-choose-bg.png);
+    width: 100%;
+    background-color: rgba(24, 24, 32, 0.9);
+    overflow: hidden;
+    padding: 5rem 0 5rem;
+    margin: 0 auto;
 }
 
+.container-mod1 {
+    max-width: 65rem;
+}
+
+.why-choose-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.why-choose-list-item {
+    flex-basis: calc(33.333% - 4px);
+    margin-bottom: 5rem;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.why-choose-list-item p,
+.why-choose-list-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+
 .sub-heading {
-    padding: 5rem;
-    color: #fff;
+    margin-bottom: var(--bs-gutter-y);
 }
 
 .sub-heading h2 {
     text-transform: capitalize;
-    font-size: 32px;
-    letter-spacing: 1%;
-    margin: 0;
-    font-size: 2rem;
+    font-size: 3.2rem;
+    letter-spacing: 0.1rem;
     font-family: 'Author-Semibold', sans-serif;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.line {
-    width: 1.5rem;
+.sub-heading h2::before,
+.sub-heading h2::after {
+    width: 2rem;
     height: 0.1rem;
-    background-color: #FFFFFF;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 0.5rem;
-}
-
-.description {
-    max-width: 66.023rem;
-    margin: 2rem auto;
-    position: relative;
-    padding: 2rem 0;
-    text-align: left;
-    font-size: 1.5rem;
+    background-color: #fff;
+    content: "";
+    margin: 0 10px;
 }
 
 .description p {
     margin: 0;
+}
+
+.description {
+    position: relative;
+    text-align: left;
+    font-size: 2rem;
+    margin: 0 auto 5rem auto;
+    padding: 2rem 0;
 }
 
 .description::before {
@@ -238,4 +292,28 @@ h3 {
     right: 0;
     bottom: 0;
     position: absolute;
+}
+
+
+/* our features*/
+
+.our-features {
+    padding: 5rem 0;
+    text-align: center;
+    color: #455A64;
+    background-color: antiquewhite;
+}
+
+.container-mod2 {
+    max-width: 80rem;
+}
+
+.our-features-box {
+    max-width: 22rem;
+    margin: 0 auto;
+}
+
+.our-features .sub-heading h2::before,
+.our-features .sub-heading h2::after {
+    background-color: #181823;
 }

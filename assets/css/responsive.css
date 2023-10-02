@@ -1,15 +1,28 @@
-@media (max-width: 1400px) {
+@media (max-width: 1280px) {
 
     .container-mod {
-        max-width: 1278.5px;
+        max-width: 108.85rem;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
+
     .main-wrapper {
-        flex-direction: row;
+        height: 50vh;
     }
 
+    .header-wrapper .h1,
+    h1 {
+        font-family: 'Author-Semibold', sans-serif;
+        font-size: 4rem;
+        line-height: 4.5rem;
+
+
+    }
+}
+
+
+@media (max-width: 600px) {
     .gps-box-wrap {
         position: relative;
         display: block;
@@ -18,5 +31,9 @@
         -webkit-transform: translateY(0%);
         -moz-transform: translateY(0%);
         -o-transform: translateY(0%);
+    }
+
+    .why-choose-list-item {
+        flex-basis: 100%;
     }
 }
